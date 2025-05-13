@@ -6,8 +6,39 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		099A38D52DD1C9CB007562AD /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099A38D42DD1C9CA007562AD /* Intents.framework */; };
+		099A38DC2DD1C9CB007562AD /* SaleinMotionIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		099A38DA2DD1C9CB007562AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 099A38AD2DD1C917007562AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 099A38D12DD1C9CA007562AD;
+			remoteInfo = SaleinMotionIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		099A38E12DD1C9CB007562AD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				099A38DC2DD1C9CB007562AD /* SaleinMotionIntent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		099A38B52DD1C917007562AD /* Sales in Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sales in Motion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SaleinMotionIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		099A38D42DD1C9CA007562AD /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -18,6 +49,20 @@
 			);
 			target = 099A38B42DD1C917007562AD /* Sales in Motion */;
 		};
+		099A38E02DD1C9CB007562AD /* Exceptions for "SaleinMotionIntent" folder in "SaleinMotionIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 099A38D12DD1C9CA007562AD /* SaleinMotionIntent */;
+		};
+		099A38E52DD1CA29007562AD /* Exceptions for "Sales in Motion" folder in "SaleinMotionIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SaleInMotion.intentdefinition,
+			);
+			target = 099A38D12DD1C9CA007562AD /* SaleinMotionIntent */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -25,8 +70,17 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				099A38C72DD1C919007562AD /* Exceptions for "Sales in Motion" folder in "Sales in Motion" target */,
+				099A38E52DD1CA29007562AD /* Exceptions for "Sales in Motion" folder in "SaleinMotionIntent" target */,
 			);
 			path = "Sales in Motion";
+			sourceTree = "<group>";
+		};
+		099A38D62DD1C9CB007562AD /* SaleinMotionIntent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				099A38E02DD1C9CB007562AD /* Exceptions for "SaleinMotionIntent" folder in "SaleinMotionIntent" target */,
+			);
+			path = SaleinMotionIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -39,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		099A38CF2DD1C9CA007562AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099A38D52DD1C9CB007562AD /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				099A38B72DD1C917007562AD /* Sales in Motion */,
+				099A38D62DD1C9CB007562AD /* SaleinMotionIntent */,
+				099A38D32DD1C9CA007562AD /* Frameworks */,
 				099A38B62DD1C917007562AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				099A38B52DD1C917007562AD /* Sales in Motion.app */,
+				099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		099A38D32DD1C9CA007562AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				099A38D42DD1C9CA007562AD /* Intents.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,10 +141,12 @@
 				099A38B12DD1C917007562AD /* Sources */,
 				099A38B22DD1C917007562AD /* Frameworks */,
 				099A38B32DD1C917007562AD /* Resources */,
+				099A38E12DD1C9CB007562AD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				099A38DB2DD1C9CB007562AD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				099A38B72DD1C917007562AD /* Sales in Motion */,
@@ -82,6 +157,28 @@
 			productName = "Sales in Motion";
 			productReference = 099A38B52DD1C917007562AD /* Sales in Motion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		099A38D12DD1C9CA007562AD /* SaleinMotionIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099A38DD2DD1C9CB007562AD /* Build configuration list for PBXNativeTarget "SaleinMotionIntent" */;
+			buildPhases = (
+				099A38CE2DD1C9CA007562AD /* Sources */,
+				099A38CF2DD1C9CA007562AD /* Frameworks */,
+				099A38D02DD1C9CA007562AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				099A38D62DD1C9CB007562AD /* SaleinMotionIntent */,
+			);
+			name = SaleinMotionIntent;
+			packageProductDependencies = (
+			);
+			productName = SaleinMotionIntent;
+			productReference = 099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +191,9 @@
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					099A38B42DD1C917007562AD = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					099A38D12DD1C9CA007562AD = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -113,12 +213,20 @@
 			projectRoot = "";
 			targets = (
 				099A38B42DD1C917007562AD /* Sales in Motion */,
+				099A38D12DD1C9CA007562AD /* SaleinMotionIntent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		099A38B32DD1C917007562AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099A38D02DD1C9CA007562AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +243,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		099A38CE2DD1C9CA007562AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		099A38DB2DD1C9CB007562AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 099A38D12DD1C9CA007562AD /* SaleinMotionIntent */;
+			targetProxy = 099A38DA2DD1C9CB007562AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		099A38C92DD1C919007562AD /* Debug */ = {
@@ -143,6 +266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sales in Motion/Sales in Motion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PSZC886TA5;
@@ -151,8 +275,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,6 +284,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.genetum.xrun.Sales-in-Motion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -171,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sales in Motion/Sales in Motion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PSZC886TA5;
@@ -179,8 +308,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +317,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.genetum.xrun.Sales-in-Motion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +446,58 @@
 			};
 			name = Release;
 		};
+		099A38DE2DD1C9CB007562AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaleinMotionIntent/SaleinMotionIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSZC886TA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaleinMotionIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaleinMotionIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.genetum.xrun.Sales-in-Motion.SaleinMotionIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		099A38DF2DD1C9CB007562AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaleinMotionIntent/SaleinMotionIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSZC886TA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaleinMotionIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaleinMotionIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.genetum.xrun.Sales-in-Motion.SaleinMotionIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +515,15 @@
 			buildConfigurations = (
 				099A38C92DD1C919007562AD /* Debug */,
 				099A38CA2DD1C919007562AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		099A38DD2DD1C9CB007562AD /* Build configuration list for PBXNativeTarget "SaleinMotionIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099A38DE2DD1C9CB007562AD /* Debug */,
+				099A38DF2DD1C9CB007562AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
