@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0975D2742DEA2DFC00E4E2B7 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 0975D2732DEA2DFC00E4E2B7 /* FirebaseAppCheck */; };
+		0975D2762DEA2DFC00E4E2B7 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0975D2752DEA2DFC00E4E2B7 /* FirebaseCore */; };
+		0975D2782DEA2DFC00E4E2B7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0975D2772DEA2DFC00E4E2B7 /* FirebaseFirestore */; };
+		0975D27A2DEA2E4D00E4E2B7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0975D2792DEA2E4D00E4E2B7 /* FirebaseFirestore */; };
 		099A38D52DD1C9CB007562AD /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099A38D42DD1C9CA007562AD /* Intents.framework */; };
 		099A38DC2DD1C9CB007562AD /* SaleinMotionIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -59,6 +63,8 @@
 		099A38E52DD1CA29007562AD /* Exceptions for "Sales in Motion" folder in "SaleinMotionIntent" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"GoogleService-Info.plist",
+				IdeasModel.swift,
 				SaleInMotion.intentdefinition,
 			);
 			target = 099A38D12DD1C9CA007562AD /* SaleinMotionIntent */;
@@ -90,6 +96,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0975D2762DEA2DFC00E4E2B7 /* FirebaseCore in Frameworks */,
+				0975D2742DEA2DFC00E4E2B7 /* FirebaseAppCheck in Frameworks */,
+				0975D2782DEA2DFC00E4E2B7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099A38D52DD1C9CB007562AD /* Intents.framework in Frameworks */,
+				0975D27A2DEA2E4D00E4E2B7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +162,6 @@
 				099A38B72DD1C917007562AD /* Sales in Motion */,
 			);
 			name = "Sales in Motion";
-			packageProductDependencies = (
-			);
 			productName = "Sales in Motion";
 			productReference = 099A38B52DD1C917007562AD /* Sales in Motion.app */;
 			productType = "com.apple.product-type.application";
@@ -174,8 +182,6 @@
 				099A38D62DD1C9CB007562AD /* SaleinMotionIntent */,
 			);
 			name = SaleinMotionIntent;
-			packageProductDependencies = (
-			);
 			productName = SaleinMotionIntent;
 			productReference = 099A38D22DD1C9CA007562AD /* SaleinMotionIntent.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -207,6 +213,9 @@
 			);
 			mainGroup = 099A38AC2DD1C917007562AD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 099A38B62DD1C917007562AD /* Products */;
 			projectDirPath = "";
@@ -529,6 +538,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0975D2732DEA2DFC00E4E2B7 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		0975D2752DEA2DFC00E4E2B7 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		0975D2772DEA2DFC00E4E2B7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0975D2792DEA2E4D00E4E2B7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0975D2722DEA2DFC00E4E2B7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 099A38AD2DD1C917007562AD /* Project object */;
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBLNLCsoYLaQl-8hgDTmN9dWxHCdKIuA6E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>758108316962</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.genetum.xrun.Sales-in-Motion</string>
+	<key>PROJECT_ID</key>
+	<string>files-74f3b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>files-74f3b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:758108316962:ios:2031a0d9440c04e1ceb17b</string>
+	<key>DATABASE_URL</key>
+	<string>https://files-74f3b.firebaseio.com</string>
+</dict>
+</plist>
